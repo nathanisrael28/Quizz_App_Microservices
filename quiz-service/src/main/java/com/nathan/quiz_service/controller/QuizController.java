@@ -24,7 +24,7 @@ public class QuizController {
     @PostMapping("create")
     public ResponseEntity<String> createQuiz(@RequestBody QuizDto quizDto){
 
-        return quizService.createQuiz(quizDto.getCategory(), quizDto.getNumQ(), quizDto.getTitle());
+        return quizService.createQuiz(quizDto.getCategoryName(), quizDto.getNumQuestions(), quizDto.getTitle());
 
     }
     @GetMapping("get/{quizId}")
@@ -39,7 +39,6 @@ public class QuizController {
         return quizService.calculateResults(quizId,responses);
     }
 
-
-
+//add actuator
 
 }

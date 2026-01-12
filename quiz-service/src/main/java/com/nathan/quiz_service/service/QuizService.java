@@ -1,7 +1,7 @@
 package com.nathan.quiz_service.service;
 
 
-import com.nathan.quiz_service.model.Question;
+import com.nathan.quiz_service.feign.QuizInterface;
 import com.nathan.quiz_service.model.QuestionWrapper;
 import com.nathan.quiz_service.model.Quiz;
 import com.nathan.quiz_service.model.Response;
@@ -20,55 +20,40 @@ public class QuizService {
 
     @Autowired
     private QuizRepo quizRepo;
-   /* @Autowired
-    private QuestionRepo questionRepo;*/
+    @Autowired
+    QuizInterface quizInterface;
 
     public ResponseEntity<String> createQuiz(String category, int numQ, String title) {
-        List<Question> questions = questionRepo.findRandomQuestionsByCategory(category,numQ);
+  /*      List<Question> questions = questionRepo.findRandomQuestionsByCategory(category,numQ);
         Quiz quiz = new Quiz();
         quiz.setTitle(title);
         quiz.setQuestions(questions);
+        quizRepo.save(quiz);*/
+
+        //Here we have to call the question url eg: http://localhost:8080/question/generate
+        // it can be called using RestTemplate - it offers a manual proccess of assigning the all the service properites
+        // like url, port, apis, etc. so its not a good idea to hardcode them, so that why we are using the Open Feign client
+        // so that it will detect the service according to the api or method name that we are calling.
+        List<Integer> questions = quizInterface.getQuestionsforQuiz(category,numQ).getBody(); //using getbody() because it will return the response entity
+        Quiz quiz = new Quiz();
+        quiz.setTitle(title);
+        quiz.setQuestionIds(questions);
         quizRepo.save(quiz);
 
-        try {
-            return new ResponseEntity<>("Quiz Created Sucessfully", HttpStatus.CREATED);
-        }
-        catch (Exception e){
-            e.printStackTrace();
-        }
-        return new ResponseEntity<>("Quiz Not Created", HttpStatus.BAD_REQUEST);
+        return new ResponseEntity<>("Success",HttpStatus.CREATED);
     }
 
 
     public ResponseEntity<List<QuestionWrapper>> getQuizQuestions(int quizId) {
 
-        Optional<Quiz> quiz = quizRepo.findById(quizId);
-        List<Question> questionsFromDb = quiz.get().getQuestions();
-        List<QuestionWrapper> questionsForUsers = new ArrayList<>();
-        for(Question q :questionsFromDb) {
-            QuestionWrapper qw = new QuestionWrapper(
-                    q.getId(),q.getQuestionTitle(),q.getOption1(),q.getOption2(),q.getOption3(),q.getOption4());
-            questionsForUsers.add(qw);
-        }
+       Quiz quiz = quizRepo.findById(quizId).get();
+       List<Integer> questionIds= quiz.getQuestionIds();
+        ResponseEntity<List<QuestionWrapper>> questions = quizInterface.getQuestionsFromId(questionIds);
 
-        return new ResponseEntity<>(questionsForUsers,HttpStatus.OK);
+        return questions;
     }
 
     public ResponseEntity<Integer> calculateResults(Integer quizId, List<Response> responses) {
-
-        Quiz quiz = quizRepo.findById(quizId).get();
-        //We can use dot get To avoid the optional Object Since it's for learning, But we should use optional
-        //Because it will To find the null or empty And handle the exception
-
-        List<Question> questions = quiz.getQuestions();
-        int result=0;
-        int i =0;
-        for(Response response : responses){
-            if(response.getResponse().equals(questions.get(i).getRightAnswer())){
-                result++;
-            }
-            i++;
-        }
-        return new ResponseEntity<>(result,HttpStatus.OK);
+      return  quizInterface.getScore(responses);
     }
 }

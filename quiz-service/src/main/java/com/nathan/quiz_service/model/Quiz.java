@@ -11,6 +11,9 @@ public class Quiz {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String title;
-    @ManyToMany
-    private List<Question> questions;
+    //here we are changing the that instead of getting the questions, we are getting the Question ids,
+    // since we are getting the numbers which is Integers not an objects we can't use @ManytoMany, instead we
+    // use @ElementCollection
+    @ElementCollection
+    private List<Integer> questionIds;
 }
