@@ -1,0 +1,748 @@
+✔ quizz_app_microservices-question-service              Built                                                                               0.0s 
+ ✔ quizz_app_microservices-quiz-service                  Built                                                                               0.0s 
+ ✔ quizz_app_microservices-service-registry              Built                                                                               0.0s 
+ ✔ quizz_app_microservices-api-gateway                   Built                                                                               0.0s 
+ ✔ Network quizz_app_microservices_quiz-app-network      Created                                                                             0.1s 
+ ✔ Volume quizz_app_microservices_quizdb                 Created                                                                             0.0s 
+ ✔ Volume quizz_app_microservices_questiondb             Created                                                                             0.0s 
+ ✔ Container quizz_app_microservices-quizdb-1            Created                                                                             0.6s 
+ ✔ Container quizz_app_microservices-service-registry-1  Created                                                                             0.6s 
+ ✔ Container quizz_app_microservices-questiondb-1        Created                                                                             0.6s 
+ ✔ Container quizz_app_microservices-api-gateway-1       Created                                                                             0.7s 
+ ✔ Container quizz_app_microservices-quiz-service-1      Created                                                                             0.7s 
+ ✔ Container quizz_app_microservices-question-service-1  Created                                                                             0.9s 
+Attaching to api-gateway-1, question-service-1, questiondb-1, quiz-service-1, quizdb-1, service-registry-1
+quizdb-1  | 2026-01-12 14:55:38+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.4.7-1.el9 started.
+questiondb-1  | 2026-01-12 14:55:38+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.4.7-1.el9 started.
+quizdb-1      | 2026-01-12 14:55:39+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+quizdb-1      | 2026-01-12 14:55:39+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.4.7-1.el9 started.
+questiondb-1  | 2026-01-12 14:55:39+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+questiondb-1  | 2026-01-12 14:55:39+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.4.7-1.el9 started.
+quizdb-1      | 2026-01-12 14:55:39+00:00 [Note] [Entrypoint]: Initializing database files
+quizdb-1      | 2026-01-12T14:55:39.813728Z 0 [System] [MY-015017] [Server] MySQL Server Initialization - start.
+quizdb-1      | 2026-01-12T14:55:39.826486Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.4.7) initializing of server in progress as process 78
+questiondb-1  | 2026-01-12 14:55:39+00:00 [Note] [Entrypoint]: Initializing database files
+quizdb-1      | 2026-01-12T14:55:39.867338Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+questiondb-1  | 2026-01-12T14:55:39.873673Z 0 [System] [MY-015017] [Server] MySQL Server Initialization - start.
+questiondb-1  | 2026-01-12T14:55:39.876590Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.4.7) initializing of server in progress as process 81
+questiondb-1  | 2026-01-12T14:55:39.921342Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+questiondb-1  | 2026-01-12T14:55:41.279658Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+quizdb-1      | 2026-01-12T14:55:41.429700Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+service-registry-1  | 
+service-registry-1  |   .   ____          _            __ _ _
+service-registry-1  |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+service-registry-1  | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+service-registry-1  |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+service-registry-1  |   '  |____| .__|_| |_|_| |_\__, | / / / /
+service-registry-1  |  =========|_|==============|___/=/_/_/_/
+service-registry-1  | 
+service-registry-1  |  :: Spring Boot ::                (v3.5.9)
+service-registry-1  | 
+service-registry-1  | 2026-01-12T14:55:45.973Z  INFO 1 --- [service-registry] [           main] c.n.s.ServiceRegistryApplication         : Starting ServiceRegistryApplication v0.0.1-SNAPSHOT using Java 21.0.9 with PID 1 (/app/app.jar started by root in /app)
+service-registry-1  | 2026-01-12T14:55:46.003Z  INFO 1 --- [service-registry] [           main] c.n.s.ServiceRegistryApplication         : No active profile set, falling back to 1 default profile: "default"
+questiondb-1        | 2026-01-12T14:55:46.787478Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+quizdb-1            | 2026-01-12T14:55:47.604339Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+service-registry-1  | 2026-01-12T14:55:53.763Z  INFO 1 --- [service-registry] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=9ce4fc28-0c26-3353-87da-57d189af86b3
+quizdb-1            | 2026-01-12T14:55:54.485787Z 0 [System] [MY-015018] [Server] MySQL Server Initialization - end.
+questiondb-1        | 2026-01-12T14:55:54.493830Z 0 [System] [MY-015018] [Server] MySQL Server Initialization - end.
+quizdb-1            | 2026-01-12 14:55:54+00:00 [Note] [Entrypoint]: Database files initialized
+questiondb-1        | 2026-01-12 14:55:54+00:00 [Note] [Entrypoint]: Database files initialized
+questiondb-1        | 2026-01-12 14:55:54+00:00 [Note] [Entrypoint]: Starting temporary server
+quizdb-1            | 2026-01-12 14:55:54+00:00 [Note] [Entrypoint]: Starting temporary server
+quizdb-1            | 2026-01-12T14:55:54.595168Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+quizdb-1            | 2026-01-12T14:55:54.862518Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.4.7) starting as process 136
+quizdb-1            | 2026-01-12T14:55:54.912965Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+service-registry-1  | 2026-01-12T14:55:55.023Z  INFO 1 --- [service-registry] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8761 (http)
+questiondb-1        | 2026-01-12T14:55:54.640613Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+questiondb-1        | 2026-01-12T14:55:55.019033Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.4.7) starting as process 139
+questiondb-1        | 2026-01-12T14:55:55.115206Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+service-registry-1  | 2026-01-12T14:55:55.169Z  INFO 1 --- [service-registry] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+service-registry-1  | 2026-01-12T14:55:55.171Z  INFO 1 --- [service-registry] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.50]
+service-registry-1  | 2026-01-12T14:55:55.254Z  INFO 1 --- [service-registry] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+service-registry-1  | 2026-01-12T14:55:55.262Z  INFO 1 --- [service-registry] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8501 ms
+quizdb-1            | 2026-01-12T14:55:55.932456Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+questiondb-1        | 2026-01-12T14:55:56.093427Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+questiondb-1        | 2026-01-12T14:55:57.125120Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+questiondb-1        | 2026-01-12T14:55:57.125192Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+quizdb-1            | 2026-01-12T14:55:57.133525Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+quizdb-1            | 2026-01-12T14:55:57.133612Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+questiondb-1        | 2026-01-12T14:55:57.141360Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+quizdb-1            | 2026-01-12T14:55:57.157784Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+questiondb-1        | 2026-01-12T14:55:57.300780Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: /var/run/mysqld/mysqlx.sock
+questiondb-1        | 2026-01-12T14:55:57.300971Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.4.7'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+quizdb-1            | 2026-01-12T14:55:57.324247Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: /var/run/mysqld/mysqlx.sock
+quizdb-1            | 2026-01-12T14:55:57.324474Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.4.7'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+quizdb-1            | 2026-01-12 14:55:57+00:00 [Note] [Entrypoint]: Temporary server started.
+questiondb-1        | 2026-01-12 14:55:57+00:00 [Note] [Entrypoint]: Temporary server started.
+questiondb-1        | '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
+quizdb-1            | '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
+quizdb-1            | Warning: Unable to load '/usr/share/zoneinfo/iso3166.tab' as time zone. Skipping it.
+quizdb-1            | Warning: Unable to load '/usr/share/zoneinfo/leap-seconds.list' as time zone. Skipping it.
+quizdb-1            | Warning: Unable to load '/usr/share/zoneinfo/leapseconds' as time zone. Skipping it.
+questiondb-1        | Warning: Unable to load '/usr/share/zoneinfo/iso3166.tab' as time zone. Skipping it.
+questiondb-1        | Warning: Unable to load '/usr/share/zoneinfo/leap-seconds.list' as time zone. Skipping it.
+questiondb-1        | Warning: Unable to load '/usr/share/zoneinfo/leapseconds' as time zone. Skipping it.
+service-registry-1  | 2026-01-12T14:56:02.618Z  INFO 1 --- [service-registry] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+service-registry-1  | 2026-01-12T14:56:02.625Z  INFO 1 --- [service-registry] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+service-registry-1  | 2026-01-12T14:56:03.986Z  INFO 1 --- [service-registry] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+service-registry-1  | 2026-01-12T14:56:03.986Z  INFO 1 --- [service-registry] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+questiondb-1        | Warning: Unable to load '/usr/share/zoneinfo/tzdata.zi' as time zone. Skipping it.
+questiondb-1        | Warning: Unable to load '/usr/share/zoneinfo/zone.tab' as time zone. Skipping it.
+questiondb-1        | Warning: Unable to load '/usr/share/zoneinfo/zone1970.tab' as time zone. Skipping it.
+quizdb-1            | Warning: Unable to load '/usr/share/zoneinfo/tzdata.zi' as time zone. Skipping it.
+quizdb-1            | Warning: Unable to load '/usr/share/zoneinfo/zone.tab' as time zone. Skipping it.
+quizdb-1            | Warning: Unable to load '/usr/share/zoneinfo/zone1970.tab' as time zone. Skipping it.
+quizdb-1            | 2026-01-12 14:56:04+00:00 [Note] [Entrypoint]: Creating database quizdb
+quizdb-1            | 2026-01-12 14:56:05+00:00 [Note] [Entrypoint]: Creating user quizdb
+quizdb-1            | 2026-01-12 14:56:05+00:00 [Note] [Entrypoint]: Giving user quizdb access to schema quizdb
+questiondb-1        | 2026-01-12 14:56:05+00:00 [Note] [Entrypoint]: Creating database questiondb
+quizdb-1            | 
+quizdb-1            | 2026-01-12 14:56:05+00:00 [Note] [Entrypoint]: Stopping temporary server
+questiondb-1        | 2026-01-12 14:56:05+00:00 [Note] [Entrypoint]: Creating user questiondbHUTDOWN from user root. Shutting down mysqld (Versionquestiondb-1        | 2026-01-12 14:56:05+00:00 [Note] [Entrypoint]: Giving user questiondb access to schema questiondb
+service-registry-1  | 2026-01-12T14:56:05.300Z  INFO 1 --- [service-registry] [           main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+questiondb-1        | 
+questiondb-1        | 2026-01-12 14:56:05+00:00 [Note] [Entrypoint]: Stopping temporary server
+questiondb-1        | 2026-01-12T14:56:05.368292Z 15 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.4.7).
+quizdb-1            | 2026-01-12T14:56:06.054852Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.4.7)  MySQL Community Server - GPL.
+quizdb-1            | 2026-01-12T14:56:06.054889Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+questiondb-1        | 2026-01-12T14:56:06.173924Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.4.7)  MySQL Community Server - GPL.
+questiondb-1        | 2026-01-12T14:56:06.177102Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+quizdb-1            | 2026-01-12 14:56:06+00:00 [Note] [Entrypoint]: Temporary server stopped
+quizdb-1            | 
+quizdb-1            | 2026-01-12 14:56:06+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+quizdb-1            | 
+questiondb-1        | 2026-01-12 14:56:06+00:00 [Note] [Entrypoint]: Temporary server stopped
+questiondb-1        | 
+questiondb-1        | 2026-01-12 14:56:06+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+questiondb-1        | 
+quizdb-1            | 2026-01-12T14:56:06.285617Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+quizdb-1            | 2026-01-12T14:56:06.680619Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.4.7) starting as process 1
+quizdb-1            | 2026-01-12T14:56:06.712493Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+questiondb-1        | 2026-01-12T14:56:06.416288Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+questiondb-1        | 2026-01-12T14:56:06.780846Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.4.7) starting as process 1
+questiondb-1        | 2026-01-12T14:56:06.815122Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+quizdb-1            | 2026-01-12T14:56:07.490474Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+questiondb-1        | 2026-01-12T14:56:07.597495Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+quizdb-1            | 2026-01-12T14:56:08.212386Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+quizdb-1            | 2026-01-12T14:56:08.212544Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+quizdb-1            | 2026-01-12T14:56:08.226070Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+quizdb-1            | 2026-01-12T14:56:08.298317Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
+quizdb-1            | 2026-01-12T14:56:08.302980Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.4.7'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+questiondb-1        | 2026-01-12T14:56:08.347931Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+questiondb-1        | 2026-01-12T14:56:08.348003Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+questiondb-1        | 2026-01-12T14:56:08.357475Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+questiondb-1        | 2026-01-12T14:56:08.422406Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
+questiondb-1        | 2026-01-12T14:56:08.422561Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.4.7'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+service-registry-1  | 2026-01-12T14:56:08.821Z  WARN 1 --- [service-registry] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+service-registry-1  | 2026-01-12T14:56:08.880Z  INFO 1 --- [service-registry] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+service-registry-1  | 2026-01-12T14:56:08.941Z  INFO 1 --- [service-registry] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+service-registry-1  | 2026-01-12T14:56:08.941Z  INFO 1 --- [service-registry] [           main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+service-registry-1  | 2026-01-12T14:56:08.948Z  INFO 1 --- [service-registry] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1768229768944 with initial instances count: 0
+service-registry-1  | 2026-01-12T14:56:09.068Z  INFO 1 --- [service-registry] [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+service-registry-1  | 2026-01-12T14:56:09.073Z  INFO 1 --- [service-registry] [           main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+service-registry-1  | 2026-01-12T14:56:09.316Z  INFO 1 --- [service-registry] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+service-registry-1  | 2026-01-12T14:56:09.317Z  INFO 1 --- [service-registry] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+service-registry-1  | 2026-01-12T14:56:09.317Z  INFO 1 --- [service-registry] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+service-registry-1  | 2026-01-12T14:56:09.317Z  INFO 1 --- [service-registry] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+service-registry-1  | 2026-01-12T14:56:09.441Z  INFO 1 --- [service-registry] [           main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+service-registry-1  | 2026-01-12T14:56:09.471Z  INFO 1 --- [service-registry] [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+service-registry-1  | 2026-01-12T14:56:09.472Z  INFO 1 --- [service-registry] [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+service-registry-1  | 2026-01-12T14:56:09.512Z  INFO 1 --- [service-registry] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+service-registry-1  | 2026-01-12T14:56:09.679Z  INFO 1 --- [service-registry] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-REGISTRY with eureka with status UP
+service-registry-1  | 2026-01-12T14:56:09.726Z  INFO 1 --- [service-registry] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+service-registry-1  | 2026-01-12T14:56:09.730Z  INFO 1 --- [service-registry] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+service-registry-1  | 2026-01-12T14:56:09.731Z  INFO 1 --- [service-registry] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+service-registry-1  | 2026-01-12T14:56:09.731Z  INFO 1 --- [service-registry] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+service-registry-1  | 2026-01-12T14:56:09.731Z  INFO 1 --- [service-registry] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+service-registry-1  | 2026-01-12T14:56:09.745Z  INFO 1 --- [service-registry] [       Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+service-registry-1  | 2026-01-12T14:56:09.761Z  INFO 1 --- [service-registry] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8761 (http) with context path '/'
+service-registry-1  | 2026-01-12T14:56:09.764Z  INFO 1 --- [service-registry] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+service-registry-1  | 2026-01-12T14:56:09.825Z  INFO 1 --- [service-registry] [           main] c.n.s.ServiceRegistryApplication         : Started ServiceRegistryApplication in 27.63 seconds (process running for 31.335)
+service-registry-1  | 2026-01-12T14:56:10.182Z  INFO 1 --- [service-registry] [nio-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+service-registry-1  | 2026-01-12T14:56:10.183Z  INFO 1 --- [service-registry] [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+service-registry-1  | 2026-01-12T14:56:10.185Z  INFO 1 --- [service-registry] [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+api-gateway-1       | 
+api-gateway-1       |   .   ____          _            __ _ _
+api-gateway-1       |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+api-gateway-1       | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+api-gateway-1       |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+api-gateway-1       |   '  |____| .__|_| |_|_| |_\__, | / / / /
+api-gateway-1       |  =========|_|==============|___/=/_/_/_/
+api-gateway-1       |  :: Spring Boot ::                (v3.2.2)
+api-gateway-1       | 
+question-service-1  | 
+question-service-1  |   .   ____          _            __ _ _
+question-service-1  |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+question-service-1  | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+question-service-1  |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+question-service-1  |   '  |____| .__|_| |_|_| |_\__, | / / / /
+question-service-1  |  =========|_|==============|___/=/_/_/_/
+question-service-1  | 
+question-service-1  |  :: Spring Boot ::                (v3.5.9)
+question-service-1  | 
+question-service-1  | 2026-01-12T14:56:18.682Z  INFO 1 --- [question-service] [           main] c.n.q.QuestionServiceApplication         : Starting QuestionServiceApplication v0.0.1-SNAPSHOT using Java 21.0.9 with PID 1 (/app/app.jar started by root in /app)
+question-service-1  | 2026-01-12T14:56:18.710Z  INFO 1 --- [question-service] [           main] c.n.q.QuestionServiceApplication         : The following 1 profile is active: "docker"
+api-gateway-1       | 2026-01-12T14:56:19.121Z  INFO 1 --- [api-gateway] [           main] c.n.api_gateway.ApiGatewayApplication    : Starting ApiGatewayApplication v0.0.1-SNAPSHOT using Java 21.0.9 with PID 1 (/app/app.jar started by root in /app)
+api-gateway-1       | 2026-01-12T14:56:19.166Z  INFO 1 --- [api-gateway] [           main] c.n.api_gateway.ApiGatewayApplication    : No active profile set, falling back to 1 default profile: "default"
+quiz-service-1      | 
+quiz-service-1      |   .   ____          _            __ _ _
+quiz-service-1      |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+quiz-service-1      | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+quiz-service-1      |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+quiz-service-1      |   '  |____| .__|_| |_|_| |_\__, | / / / /
+quiz-service-1      |  =========|_|==============|___/=/_/_/_/
+quiz-service-1      | 
+quiz-service-1      |  :: Spring Boot ::                (v4.0.1)
+quiz-service-1      | 
+quiz-service-1      | 2026-01-12T14:56:20.914Z  INFO 1 --- [quiz-service] [           main] c.n.quiz_service.QuizServiceApplication  : Starting QuizServiceApplication v0.0.1-SNAPSHOT using Java 21.0.9 with PID 1 (/app/app.jar started by root in /app)
+quiz-service-1      | 2026-01-12T14:56:20.951Z  INFO 1 --- [quiz-service] [           main] c.n.quiz_service.QuizServiceApplication  : The following 1 profile is active: "docker"
+question-service-1  | 2026-01-12T14:56:26.848Z  INFO 1 --- [question-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+api-gateway-1       | 2026-01-12T14:56:27.501Z  INFO 1 --- [api-gateway] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ab6373b3-3fd4-3cf5-80c9-19ad8bedd5c6
+question-service-1  | 2026-01-12T14:56:27.533Z  INFO 1 --- [question-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 590 ms. Found 1 JPA repository interface.
+api-gateway-1       | 2026-01-12T14:56:27.954Z  WARN 1 --- [api-gateway] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+api-gateway-1       | 2026-01-12T14:56:27.972Z  WARN 1 --- [api-gateway] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+api-gateway-1       | 2026-01-12T14:56:28.012Z  WARN 1 --- [api-gateway] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+api-gateway-1       | 2026-01-12T14:56:28.018Z  WARN 1 --- [api-gateway] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+api-gateway-1       | 2026-01-12T14:56:28.027Z  WARN 1 --- [api-gateway] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+quiz-service-1      | 2026-01-12T14:56:28.350Z  INFO 1 --- [quiz-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+question-service-1  | 2026-01-12T14:56:28.821Z  INFO 1 --- [question-service] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7aaca582-ee6c-3625-9d01-440ae057ed26
+quiz-service-1      | 2026-01-12T14:56:29.558Z  INFO 1 --- [quiz-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1160 ms. Found 1 JPA repository interface.
+question-service-1  | 2026-01-12T14:56:31.143Z  INFO 1 --- [question-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+question-service-1  | 2026-01-12T14:56:31.206Z  INFO 1 --- [question-service] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+question-service-1  | 2026-01-12T14:56:31.206Z  INFO 1 --- [question-service] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.50]
+quiz-service-1      | 2026-01-12T14:56:31.281Z  INFO 1 --- [quiz-service] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8e7ee456-25d6-3e9b-9225-72dab0a66917
+question-service-1  | 2026-01-12T14:56:31.356Z  INFO 1 --- [question-service] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+question-service-1  | 2026-01-12T14:56:31.362Z  INFO 1 --- [question-service] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 11750 ms
+api-gateway-1       | 2026-01-12T14:56:32.381Z  INFO 1 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+api-gateway-1       | 2026-01-12T14:56:32.381Z  INFO 1 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+api-gateway-1       | 2026-01-12T14:56:32.381Z  INFO 1 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+api-gateway-1       | 2026-01-12T14:56:32.381Z  INFO 1 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+api-gateway-1       | 2026-01-12T14:56:32.381Z  INFO 1 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+api-gateway-1       | 2026-01-12T14:56:32.382Z  INFO 1 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+api-gateway-1       | 2026-01-12T14:56:32.385Z  INFO 1 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+api-gateway-1       | 2026-01-12T14:56:32.386Z  INFO 1 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+api-gateway-1       | 2026-01-12T14:56:32.386Z  INFO 1 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+api-gateway-1       | 2026-01-12T14:56:32.386Z  INFO 1 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+api-gateway-1       | 2026-01-12T14:56:32.386Z  INFO 1 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+api-gateway-1       | 2026-01-12T14:56:32.386Z  INFO 1 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+api-gateway-1       | 2026-01-12T14:56:32.386Z  INFO 1 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+api-gateway-1       | 2026-01-12T14:56:32.386Z  INFO 1 --- [api-gateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+question-service-1  | 2026-01-12T14:56:32.485Z  INFO 1 --- [question-service] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+question-service-1  | 2026-01-12T14:56:32.766Z  INFO 1 --- [question-service] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.39.Final
+question-service-1  | 2026-01-12T14:56:33.372Z  INFO 1 --- [question-service] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+quiz-service-1      | 2026-01-12T14:56:34.255Z  INFO 1 --- [quiz-service] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8090 (http)
+quiz-service-1      | 2026-01-12T14:56:34.334Z  INFO 1 --- [quiz-service] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+quiz-service-1      | 2026-01-12T14:56:34.339Z  INFO 1 --- [quiz-service] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+quiz-service-1      | 2026-01-12T14:56:34.702Z  INFO 1 --- [quiz-service] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 12706 ms
+api-gateway-1       | 2026-01-12T14:56:34.830Z  INFO 1 --- [api-gateway] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+api-gateway-1       | 2026-01-12T14:56:35.504Z  WARN 1 --- [api-gateway] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+api-gateway-1       | 2026-01-12T14:56:35.970Z  INFO 1 --- [api-gateway] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+question-service-1  | 2026-01-12T14:56:36.556Z  INFO 1 --- [question-service] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+quiz-service-1      | 2026-01-12T14:56:36.655Z  INFO 1 --- [quiz-service] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+question-service-1  | 2026-01-12T14:56:36.789Z  INFO 1 --- [question-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+quiz-service-1      | 2026-01-12T14:56:37.324Z  INFO 1 --- [quiz-service] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+api-gateway-1       | 2026-01-12T14:56:37.310Z  INFO 1 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+api-gateway-1       | 2026-01-12T14:56:37.396Z  INFO 1 --- [api-gateway] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+api-gateway-1       | 2026-01-12T14:56:37.603Z  INFO 1 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+api-gateway-1       | 2026-01-12T14:56:37.603Z  INFO 1 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+api-gateway-1       | 2026-01-12T14:56:37.603Z  INFO 1 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+api-gateway-1       | 2026-01-12T14:56:37.603Z  INFO 1 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+api-gateway-1       | 2026-01-12T14:56:37.604Z  INFO 1 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+api-gateway-1       | 2026-01-12T14:56:37.608Z  INFO 1 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+api-gateway-1       | 2026-01-12T14:56:37.608Z  INFO 1 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+question-service-1  | 2026-01-12T14:56:38.908Z  WARN 1 --- [question-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 08S01
+question-service-1  | 2026-01-12T14:56:38.911Z ERROR 1 --- [question-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Communications link failure
+question-service-1  | 
+question-service-1  | The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+question-service-1  | 2026-01-12T14:56:38.916Z  WARN 1 --- [question-service] [           main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+question-service-1  | 
+question-service-1  | org.hibernate.exception.JDBCConnectionException: unable to obtain isolated JDBC connection [Communications link failure
+question-service-1  | 
+question-service-1  | The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+question-service-1  |   at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:100) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:334) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.15.jar!/:6.2.15]
+question-service-1  |   at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.15.jar!/:6.2.15]
+question-service-1  |   at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.15.jar!/:6.2.15]
+question-service-1  |   at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.15.jar!/:6.2.15]
+question-service-1  |   at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.15.jar!/:6.2.15]
+question-service-1  |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.15.jar!/:6.2.15]
+question-service-1  |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.15.jar!/:6.2.15]
+question-service-1  |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.15.jar!/:6.2.15]
+question-service-1  |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.15.jar!/:6.2.15]
+question-service-1  |   at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.15.jar!/:6.2.15]
+question-service-1  |   at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.15.jar!/:6.2.15]
+question-service-1  |   at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.15.jar!/:6.2.15]
+question-service-1  |   at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.15.jar!/:6.2.15]
+question-service-1  |   at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:973) ~[spring-context-6.2.15.jar!/:6.2.15]
+question-service-1  |   at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.15.jar!/:6.2.15]
+question-service-1  |   at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.9.jar!/:3.5.9]
+question-service-1  |   at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.9.jar!/:3.5.9]
+question-service-1  |   at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.9.jar!/:3.5.9]
+question-service-1  |   at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.9.jar!/:3.5.9]
+question-service-1  |   at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.9.jar!/:3.5.9]
+question-service-1  |   at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.9.jar!/:3.5.9]
+question-service-1  |   at com.nathan.question_service.QuestionServiceApplication.main(QuestionServiceApplication.java:10) ~[!/:0.0.1-SNAPSHOT]
+question-service-1  |   at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+question-service-1  |   at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+question-service-1  |   at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:106) ~[app.jar:0.0.1-SNAPSHOT]
+question-service-1  |   at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64) ~[app.jar:0.0.1-SNAPSHOT]
+question-service-1  |   at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40) ~[app.jar:0.0.1-SNAPSHOT]
+question-service-1  | Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+question-service-1  | 
+question-service-1  | The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+question-service-1  |   at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165) ~[mysql-connector-j-9.5.0.jar!/:9.5.0]
+question-service-1  |   at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55) ~[mysql-connector-j-9.5.0.jar!/:9.5.0]
+question-service-1  |   at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:840) ~[mysql-connector-j-9.5.0.jar!/:9.5.0]
+question-service-1  |   at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:416) ~[mysql-connector-j-9.5.0.jar!/:9.5.0]
+question-service-1  |   at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237) ~[mysql-connector-j-9.5.0.jar!/:9.5.0]
+question-service-1  |   at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.5.0.jar!/:9.5.0]
+question-service-1  |   at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144) ~[HikariCP-6.3.3.jar!/:na]
+question-service-1  |   at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:370) ~[HikariCP-6.3.3.jar!/:na]
+question-service-1  |   at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:207) ~[HikariCP-6.3.3.jar!/:na]
+question-service-1  |   at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488) ~[HikariCP-6.3.3.jar!/:na]
+question-service-1  |   at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:576) ~[HikariCP-6.3.3.jar!/:na]
+question-service-1  |   at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:97) ~[HikariCP-6.3.3.jar!/:na]
+question-service-1  |   at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-6.3.3.jar!/:na]
+question-service-1  |   at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:485) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   ... 40 common frames omitted
+question-service-1  | Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+question-service-1  | 
+question-service-1  | The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+question-service-1  |   at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+question-service-1  |   at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[na:na]
+question-service-1  |   at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[na:na]
+question-service-1  |   at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52) ~[mysql-connector-j-9.5.0.jar!/:9.5.0]
+question-service-1  |   at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95) ~[mysql-connector-j-9.5.0.jar!/:9.5.0]
+question-service-1  |   at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140) ~[mysql-connector-j-9.5.0.jar!/:9.5.0]
+question-service-1  |   at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156) ~[mysql-connector-j-9.5.0.jar!/:9.5.0]
+question-service-1  |   at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79) ~[mysql-connector-j-9.5.0.jar!/:9.5.0]
+question-service-1  |   at com.mysql.cj.NativeSession.connect(NativeSession.java:142) ~[mysql-connector-j-9.5.0.jar!/:9.5.0]
+question-service-1  |   at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:964) ~[mysql-connector-j-9.5.0.jar!/:9.5.0]
+question-service-1  |   at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828) ~[mysql-connector-j-9.5.0.jar!/:9.5.0]
+question-service-1  |   ... 53 common frames omitted
+question-service-1  | Caused by: java.net.ConnectException: Connection refused
+question-service-1  |   at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+question-service-1  |   at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682) ~[na:na]
+question-service-1  |   at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[na:na]
+question-service-1  |   at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592) ~[na:na]
+question-service-1  |   at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+question-service-1  |   at java.base/java.net.Socket.connect(Socket.java:751) ~[na:na]
+question-service-1  |   at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144) ~[mysql-connector-j-9.5.0.jar!/:9.5.0]
+question-service-1  |   at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53) ~[mysql-connector-j-9.5.0.jar!/:9.5.0]
+question-service-1  |   ... 56 common frames omitted
+question-service-1  | 
+question-service-1  | 2026-01-12T14:56:39.192Z  WARN 1 --- [question-service] [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+question-service-1  | 2026-01-12T14:56:39.293Z  INFO 1 --- [question-service] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+question-service-1  |   Database JDBC URL [Connecting through datasource 'HikariDataSource (null)']
+question-service-1  |   Database driver: undefined/unknown
+question-service-1  |   Database version: 8.0
+question-service-1  |   Autocommit mode: undefined/unknown
+question-service-1  |   Isolation level: undefined/unknown
+question-service-1  |   Minimum pool size: undefined/unknown
+question-service-1  |   Maximum pool size: undefined/unknown
+api-gateway-1       | 2026-01-12T14:56:40.636Z  INFO 1 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+api-gateway-1       | 2026-01-12T14:56:40.646Z  INFO 1 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+api-gateway-1       | 2026-01-12T14:56:40.664Z  INFO 1 --- [api-gateway] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+api-gateway-1       | 2026-01-12T14:56:40.801Z  INFO 1 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1768229800799 with initial instances count: 0
+api-gateway-1       | 2026-01-12T14:56:40.856Z  INFO 1 --- [api-gateway] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application API-GATEWAY with eureka with status UP
+api-gateway-1       | 2026-01-12T14:56:40.877Z  INFO 1 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1768229800877, current=UP, previous=STARTING]
+api-gateway-1       | 2026-01-12T14:56:41.012Z  INFO 1 --- [api-gateway] [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/a8a2b16ce20b:api-gateway:8765: registering service...
+quiz-service-1      | 2026-01-12T14:56:41.425Z  INFO 1 --- [quiz-service] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+quiz-service-1      | 2026-01-12T14:56:41.581Z  INFO 1 --- [quiz-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+api-gateway-1       | 2026-01-12T14:56:42.084Z  INFO 1 --- [api-gateway] [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8765
+api-gateway-1       | 2026-01-12T14:56:42.092Z  INFO 1 --- [api-gateway] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8765
+api-gateway-1       | 2026-01-12T14:56:42.231Z  INFO 1 --- [api-gateway] [           main] c.n.api_gateway.ApiGatewayApplication    : Started ApiGatewayApplication in 26.948 seconds (process running for 31.293)
+service-registry-1  | 2026-01-12T14:56:42.332Z  INFO 1 --- [service-registry] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/a8a2b16ce20b:api-gateway:8765 with status UP (replication=false)
+api-gateway-1       | 2026-01-12T14:56:42.346Z  INFO 1 --- [api-gateway] [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/a8a2b16ce20b:api-gateway:8765 - registration status: 204
+service-registry-1  | 2026-01-12T14:56:43.964Z  INFO 1 --- [service-registry] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/a8a2b16ce20b:api-gateway:8765 with status UP (replication=true)
+quiz-service-1      | 2026-01-12T14:56:44.030Z  INFO 1 --- [quiz-service] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c13019c
+quiz-service-1      | 2026-01-12T14:56:44.036Z  INFO 1 --- [quiz-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+service-registry-1  | 2026-01-12T14:56:44.074Z ERROR 1 --- [service-registry] [get_localhost-5] c.n.e.cluster.ReplicationTaskProcessor   : It seems to be a socket read timeout exception, it will retry later. if it continues to happen and some eureka node occupied all the cpu time, you should set property 'eureka.server.peer-node-read-timeout-ms' to a bigger value
+service-registry-1  | 
+service-registry-1  | jakarta.ws.rs.ProcessingException: java.net.SocketTimeoutException: Read timed out
+service-registry-1  |   at org.glassfish.jersey.apache.connector.ApacheConnector.apply(ApacheConnector.java:534) ~[jersey-apache-connector-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.client.ClientRuntime.invoke(ClientRuntime.java:300) ~[jersey-client-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$0(JerseyInvocation.java:674) ~[jersey-client-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.client.JerseyInvocation.call(JerseyInvocation.java:709) ~[jersey-client-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.client.JerseyInvocation.lambda$runInScope$3(JerseyInvocation.java:703) ~[jersey-client-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.internal.Errors.process(Errors.java:292) ~[jersey-common-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.internal.Errors.process(Errors.java:274) ~[jersey-common-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.internal.Errors.process(Errors.java:205) ~[jersey-common-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:391) ~[jersey-common-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.client.JerseyInvocation.runInScope(JerseyInvocation.java:703) ~[jersey-client-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:673) ~[jersey-client-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:439) ~[jersey-client-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.client.JerseyInvocation$Builder.post(JerseyInvocation.java:345) ~[jersey-client-3.1.11.jar!/:na]
+service-registry-1  |   at com.netflix.eureka.transport.Jersey3ReplicationClient.submitBatchUpdates(Jersey3ReplicationClient.java:116) ~[eureka-core-jersey3-2.0.5.jar!/:2.0.5]
+service-registry-1  |   at com.netflix.eureka.cluster.ReplicationTaskProcessor.process(ReplicationTaskProcessor.java:80) ~[eureka-core-2.0.5.jar!/:2.0.5]
+service-registry-1  |   at com.netflix.eureka.util.batcher.TaskExecutors$BatchWorkerRunnable.run(TaskExecutors.java:178) ~[eureka-core-2.0.5.jar!/:2.0.5]
+service-registry-1  |   at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+service-registry-1  | Caused by: java.net.SocketTimeoutException: Read timed out
+service-registry-1  |   at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:278) ~[na:na]
+service-registry-1  |   at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:304) ~[na:na]
+service-registry-1  |   at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[na:na]
+service-registry-1  |   at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[na:na]
+service-registry-1  |   at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099) ~[na:na]
+service-registry-1  |   at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137) ~[httpcore-4.4.16.jar!/:4.4.16]
+service-registry-1  |   at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153) ~[httpcore-4.4.16.jar!/:4.4.16]
+service-registry-1  |   at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280) ~[httpcore-4.4.16.jar!/:4.4.16]
+service-registry-1  |   at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138) ~[httpclient-4.5.3.jar!/:4.5.3]
+service-registry-1  |   at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56) ~[httpclient-4.5.3.jar!/:4.5.3]
+service-registry-1  |   at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259) ~[httpcore-4.4.16.jar!/:4.4.16]
+service-registry-1  |   at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163) ~[httpcore-4.4.16.jar!/:4.4.16]
+service-registry-1  |   at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165) ~[httpclient-4.5.3.jar!/:4.5.3]
+service-registry-1  |   at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273) ~[httpcore-4.4.16.jar!/:4.4.16]
+service-registry-1  |   at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125) ~[httpcore-4.4.16.jar!/:4.4.16]
+service-registry-1  |   at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272) ~[httpclient-4.5.3.jar!/:4.5.3]
+service-registry-1  |   at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185) ~[httpclient-4.5.3.jar!/:4.5.3]
+service-registry-1  |   at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.3.jar!/:4.5.3]
+service-registry-1  |   at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111) ~[httpclient-4.5.3.jar!/:4.5.3]
+service-registry-1  |   at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.3.jar!/:4.5.3]
+service-registry-1  |   at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72) ~[httpclient-4.5.3.jar!/:4.5.3]
+service-registry-1  |   at org.glassfish.jersey.apache.connector.ApacheConnector.apply(ApacheConnector.java:486) ~[jersey-apache-connector-3.1.11.jar!/:na]
+service-registry-1  |   ... 16 common frames omitted
+service-registry-1  | 
+quiz-service-1      | 2026-01-12T14:56:44.433Z  WARN 1 --- [quiz-service] [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+quiz-service-1      | 2026-01-12T14:56:44.614Z  INFO 1 --- [quiz-service] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+quiz-service-1      |   Database JDBC URL [jdbc:mysql://quizdb:3306/quizdb]
+quiz-service-1      |   Database driver: MySQL Connector/J
+quiz-service-1      |   Database dialect: MySQLDialect
+quiz-service-1      |   Database version: 8.4.7
+quiz-service-1      |   Default catalog/schema: quizdb/undefined
+quiz-service-1      |   Autocommit mode: undefined/unknown
+quiz-service-1      |   Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+quiz-service-1      |   JDBC fetch size: none
+quiz-service-1      |   Pool: DataSourceConnectionProvider
+quiz-service-1      |   Minimum pool size: undefined/unknown
+quiz-service-1      |   Maximum pool size: undefined/unknown
+question-service-1  | 2026-01-12T14:56:44.783Z  INFO 1 --- [question-service] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+question-service-1  | 2026-01-12T14:56:44.919Z  INFO 1 --- [question-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+service-registry-1  | 2026-01-12T14:56:45.197Z  INFO 1 --- [service-registry] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/a8a2b16ce20b:api-gateway:8765 with status UP (replication=true)
+question-service-1  | 2026-01-12T14:56:45.926Z  WARN 1 --- [question-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 08S01
+question-service-1  | 2026-01-12T14:56:45.927Z ERROR 1 --- [question-service] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Communications link failure
+question-service-1  | 
+question-service-1  | The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+question-service-1  | 2026-01-12T14:56:45.952Z ERROR 1 --- [question-service] [           main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+question-service-1  | 
+question-service-1  | The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+question-service-1  | 2026-01-12T14:56:45.956Z  WARN 1 --- [question-service] [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+question-service-1  | 
+question-service-1  | The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+question-service-1  | 2026-01-12T14:56:45.977Z  INFO 1 --- [question-service] [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+question-service-1  | 2026-01-12T14:56:46.033Z  INFO 1 --- [question-service] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+question-service-1  | 
+question-service-1  | Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+question-service-1  | 2026-01-12T14:56:46.166Z ERROR 1 --- [question-service] [           main] o.s.boot.SpringApplication               : Application run failed
+question-service-1  | 
+question-service-1  | org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+question-service-1  | 
+question-service-1  | The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+question-service-1  |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826) ~[spring-beans-6.2.15.jar!/:6.2.15]
+question-service-1  |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.15.jar!/:6.2.15]
+question-service-1  |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.15.jar!/:6.2.15]
+question-service-1  |   at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.15.jar!/:6.2.15]
+question-service-1  |   at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.15.jar!/:6.2.15]
+question-service-1  |   at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.15.jar!/:6.2.15]
+question-service-1  |   at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.15.jar!/:6.2.15]
+question-service-1  |   at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:973) ~[spring-context-6.2.15.jar!/:6.2.15]
+question-service-1  |   at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.15.jar!/:6.2.15]
+question-service-1  |   at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.9.jar!/:3.5.9]
+question-service-1  |   at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.9.jar!/:3.5.9]
+question-service-1  |   at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.9.jar!/:3.5.9]
+question-service-1  |   at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.9.jar!/:3.5.9]
+question-service-1  |   at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.9.jar!/:3.5.9]
+question-service-1  |   at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.9.jar!/:3.5.9]
+question-service-1  |   at com.nathan.question_service.QuestionServiceApplication.main(QuestionServiceApplication.java:10) ~[!/:0.0.1-SNAPSHOT]
+question-service-1  |   at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+question-service-1  |   at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+question-service-1  |   at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:106) ~[app.jar:0.0.1-SNAPSHOT]
+question-service-1  |   at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64) ~[app.jar:0.0.1-SNAPSHOT]
+question-service-1  |   at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40) ~[app.jar:0.0.1-SNAPSHOT]
+question-service-1  | Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+question-service-1  | 
+question-service-1  | The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+question-service-1  |   at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:431) ~[spring-orm-6.2.15.jar!/:6.2.15]
+question-service-1  |   at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.15.jar!/:6.2.15]
+question-service-1  |   at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.15.jar!/:6.2.15]
+question-service-1  |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.15.jar!/:6.2.15]
+question-service-1  |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.15.jar!/:6.2.15]
+question-service-1  |   ... 20 common frames omitted
+question-service-1  | Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+question-service-1  | 
+question-service-1  | The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+question-service-1  |   at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:100) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:65) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:233) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:112) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at java.base/java.util.HashMap.forEach(HashMap.java:1429) ~[na:na]
+question-service-1  |   at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.15.jar!/:6.2.15]
+question-service-1  |   at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.15.jar!/:6.2.15]
+question-service-1  |   at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.15.jar!/:6.2.15]
+question-service-1  |   ... 24 common frames omitted
+question-service-1  | Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+question-service-1  | 
+question-service-1  | The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+question-service-1  |   at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165) ~[mysql-connector-j-9.5.0.jar!/:9.5.0]
+question-service-1  |   at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55) ~[mysql-connector-j-9.5.0.jar!/:9.5.0]
+question-service-1  |   at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:840) ~[mysql-connector-j-9.5.0.jar!/:9.5.0]
+question-service-1  |   at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:416) ~[mysql-connector-j-9.5.0.jar!/:9.5.0]
+question-service-1  |   at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237) ~[mysql-connector-j-9.5.0.jar!/:9.5.0]
+question-service-1  |   at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.5.0.jar!/:9.5.0]
+question-service-1  |   at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144) ~[HikariCP-6.3.3.jar!/:na]
+question-service-1  |   at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:370) ~[HikariCP-6.3.3.jar!/:na]
+question-service-1  |   at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:207) ~[HikariCP-6.3.3.jar!/:na]
+question-service-1  |   at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488) ~[HikariCP-6.3.3.jar!/:na]
+question-service-1  |   at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:576) ~[HikariCP-6.3.3.jar!/:na]
+question-service-1  |   at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:97) ~[HikariCP-6.3.3.jar!/:na]
+question-service-1  |   at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-6.3.3.jar!/:na]
+question-service-1  |   at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:485) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46) ~[hibernate-core-6.6.39.Final.jar!/:6.6.39.Final]
+question-service-1  |   ... 45 common frames omitted
+question-service-1  | Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+question-service-1  | 
+question-service-1  | The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+question-service-1  |   at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+question-service-1  |   at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[na:na]
+question-service-1  |   at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[na:na]
+question-service-1  |   at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52) ~[mysql-connector-j-9.5.0.jar!/:9.5.0]
+question-service-1  |   at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95) ~[mysql-connector-j-9.5.0.jar!/:9.5.0]
+question-service-1  |   at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140) ~[mysql-connector-j-9.5.0.jar!/:9.5.0]
+question-service-1  |   at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156) ~[mysql-connector-j-9.5.0.jar!/:9.5.0]
+question-service-1  |   at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79) ~[mysql-connector-j-9.5.0.jar!/:9.5.0]
+question-service-1  |   at com.mysql.cj.NativeSession.connect(NativeSession.java:142) ~[mysql-connector-j-9.5.0.jar!/:9.5.0]
+question-service-1  |   at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:964) ~[mysql-connector-j-9.5.0.jar!/:9.5.0]
+question-service-1  |   at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828) ~[mysql-connector-j-9.5.0.jar!/:9.5.0]
+question-service-1  |   ... 58 common frames omitted
+question-service-1  | Caused by: java.net.ConnectException: Connection refused
+question-service-1  |   at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+question-service-1  |   at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682) ~[na:na]
+question-service-1  |   at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[na:na]
+question-service-1  |   at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592) ~[na:na]
+question-service-1  |   at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+question-service-1  |   at java.base/java.net.Socket.connect(Socket.java:751) ~[na:na]
+question-service-1  |   at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144) ~[mysql-connector-j-9.5.0.jar!/:9.5.0]
+question-service-1  |   at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53) ~[mysql-connector-j-9.5.0.jar!/:9.5.0]
+question-service-1  |   ... 61 common frames omitted
+question-service-1  | 
+question-service-1 exited with code 1
+quiz-service-1      | 2026-01-12T14:56:48.600Z  INFO 1 --- [quiz-service] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+quiz-service-1      | Hibernate: create table quiz (id integer not null auto_increment, title varchar(255), primary key (id)) engine=InnoDB
+quiz-service-1      | Hibernate: create table quiz_question_ids (quiz_id integer not null, question_ids integer) engine=InnoDB
+quiz-service-1      | Hibernate: alter table quiz_question_ids add constraint FKs0d7k0yq779g15wmctr0tlnbi foreign key (quiz_id) references quiz (id)
+quiz-service-1      | 2026-01-12T14:56:49.074Z  INFO 1 --- [quiz-service] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+quiz-service-1      | 2026-01-12T14:56:49.397Z  INFO 1 --- [quiz-service] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+quiz-service-1      | 2026-01-12T14:56:50.337Z  WARN 1 --- [quiz-service] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+quiz-service-1      | 2026-01-12T14:56:51.050Z  INFO 1 --- [quiz-service] [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'QUESTION-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+quiz-service-1      | 2026-01-12T14:56:53.694Z  INFO 1 --- [quiz-service] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+quiz-service-1      | 2026-01-12T14:56:53.812Z  WARN 1 --- [quiz-service] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+quiz-service-1      | 2026-01-12T14:56:53.898Z  INFO 1 --- [quiz-service] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+quiz-service-1      | 2026-01-12T14:56:53.997Z  INFO 1 --- [quiz-service] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+quiz-service-1      | 2026-01-12T14:56:54.015Z  INFO 1 --- [quiz-service] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+quiz-service-1      | 2026-01-12T14:56:54.053Z  INFO 1 --- [quiz-service] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+quiz-service-1      | 2026-01-12T14:56:54.053Z  INFO 1 --- [quiz-service] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+quiz-service-1      | 2026-01-12T14:56:54.053Z  INFO 1 --- [quiz-service] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+quiz-service-1      | 2026-01-12T14:56:54.053Z  INFO 1 --- [quiz-service] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+quiz-service-1      | 2026-01-12T14:56:54.053Z  INFO 1 --- [quiz-service] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+quiz-service-1      | 2026-01-12T14:56:54.053Z  INFO 1 --- [quiz-service] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+quiz-service-1      | 2026-01-12T14:56:54.054Z  INFO 1 --- [quiz-service] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+quiz-service-1      | 2026-01-12T14:56:55.478Z  INFO 1 --- [quiz-service] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+quiz-service-1      | 2026-01-12T14:56:55.482Z  INFO 1 --- [quiz-service] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+quiz-service-1      | 2026-01-12T14:56:55.496Z  INFO 1 --- [quiz-service] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+quiz-service-1      | 2026-01-12T14:56:55.501Z  INFO 1 --- [quiz-service] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1768229815499 with initial instances count: 0
+quiz-service-1      | 2026-01-12T14:56:55.509Z  INFO 1 --- [quiz-service] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application QUIZ-SERVICE with eureka with status UP
+quiz-service-1      | 2026-01-12T14:56:55.512Z  INFO 1 --- [quiz-service] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1768229815512, current=UP, previous=STARTING]
+quiz-service-1      | 2026-01-12T14:56:55.524Z  INFO 1 --- [quiz-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZ-SERVICE/04993e491157:quiz-service:8090: registering service...
+quiz-service-1      | 2026-01-12T14:56:55.578Z  INFO 1 --- [quiz-service] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8090 (http) with context path '/'
+quiz-service-1      | 2026-01-12T14:56:55.584Z  INFO 1 --- [quiz-service] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8090
+quiz-service-1      | 2026-01-12T14:56:55.636Z  INFO 1 --- [quiz-service] [           main] c.n.quiz_service.QuizServiceApplication  : Started QuizServiceApplication in 39.373 seconds (process running for 44.561)
+service-registry-1  | 2026-01-12T14:56:55.671Z  INFO 1 --- [service-registry] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance QUIZ-SERVICE/04993e491157:quiz-service:8090 with status UP (replication=false)
+quiz-service-1      | 2026-01-12T14:56:55.678Z  INFO 1 --- [quiz-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZ-SERVICE/04993e491157:quiz-service:8090 - registration status: 204
+service-registry-1  | 2026-01-12T14:56:56.199Z  INFO 1 --- [service-registry] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance QUIZ-SERVICE/04993e491157:quiz-service:8090 with status UP (replication=true)
+service-registry-1  | 2026-01-12T14:57:09.736Z  INFO 1 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+api-gateway-1       | 2026-01-12T14:57:10.647Z  INFO 1 --- [api-gateway] [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+api-gateway-1       | 2026-01-12T14:57:10.648Z  INFO 1 --- [api-gateway] [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+api-gateway-1       | 2026-01-12T14:57:10.648Z  INFO 1 --- [api-gateway] [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+api-gateway-1       | 2026-01-12T14:57:10.648Z  INFO 1 --- [api-gateway] [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+api-gateway-1       | 2026-01-12T14:57:10.649Z  INFO 1 --- [api-gateway] [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+api-gateway-1       | 2026-01-12T14:57:10.649Z  INFO 1 --- [api-gateway] [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+api-gateway-1       | 2026-01-12T14:57:10.651Z  INFO 1 --- [api-gateway] [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+api-gateway-1       | 2026-01-12T14:57:10.744Z  INFO 1 --- [api-gateway] [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+quiz-service-1      | 2026-01-12T14:57:25.487Z  INFO 1 --- [quiz-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+quiz-service-1      | 2026-01-12T14:57:25.488Z  INFO 1 --- [quiz-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+quiz-service-1      | 2026-01-12T14:57:25.488Z  INFO 1 --- [quiz-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+quiz-service-1      | 2026-01-12T14:57:25.488Z  INFO 1 --- [quiz-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+quiz-service-1      | 2026-01-12T14:57:25.488Z  INFO 1 --- [quiz-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+quiz-service-1      | 2026-01-12T14:57:25.489Z  INFO 1 --- [quiz-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+quiz-service-1      | 2026-01-12T14:57:25.489Z  INFO 1 --- [quiz-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+quiz-service-1      | 2026-01-12T14:57:25.581Z  INFO 1 --- [quiz-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+service-registry-1  | 2026-01-12T14:58:09.741Z  INFO 1 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+service-registry-1  | 2026-01-12T14:59:09.742Z  INFO 1 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+service-registry-1  | 2026-01-12T15:00:09.742Z  INFO 1 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+service-registry-1  | 2026-01-12T15:01:09.742Z  INFO 1 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+api-gateway-1       | 2026-01-12T15:01:37.619Z  INFO 1 --- [api-gateway] [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+quiz-service-1      | 2026-01-12T15:01:54.063Z  INFO 1 --- [quiz-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+service-registry-1  | 2026-01-12T15:02:09.743Z  INFO 1 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+service-registry-1  | 2026-01-12T15:03:09.743Z  INFO 1 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+service-registry-1  | 2026-01-12T15:04:09.745Z  INFO 1 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+service-registry-1  | 2026-01-12T15:05:09.745Z  INFO 1 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+service-registry-1  | 2026-01-12T15:06:09.746Z  INFO 1 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+api-gateway-1       | 2026-01-12T15:06:37.620Z  INFO 1 --- [api-gateway] [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+quiz-service-1      | 2026-01-12T15:06:54.063Z  INFO 1 --- [quiz-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+service-registry-1  | 2026-01-12T15:07:09.745Z  INFO 1 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+service-registry-1  | 2026-01-12T15:08:09.746Z  INFO 1 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+service-registry-1  | 2026-01-12T15:09:09.762Z  INFO 1 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 16ms
+service-registry-1  | 2026-01-12T15:10:10.085Z  INFO 1 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 333ms
+service-registry-1  | 2026-01-12T15:10:57.941Z ERROR 1 --- [service-registry] [et_localhost-13] c.n.e.cluster.ReplicationTaskProcessor   : It seems to be a socket read timeout exception, it will retry later. if it continues to happen and some eureka node occupied all the cpu time, you should set property 'eureka.server.peer-node-read-timeout-ms' to a bigger value
+service-registry-1  | 
+service-registry-1  | jakarta.ws.rs.ProcessingException: java.net.SocketTimeoutException: Read timed out
+service-registry-1  |   at org.glassfish.jersey.apache.connector.ApacheConnector.apply(ApacheConnector.java:534) ~[jersey-apache-connector-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.client.ClientRuntime.invoke(ClientRuntime.java:300) ~[jersey-client-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$0(JerseyInvocation.java:674) ~[jersey-client-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.client.JerseyInvocation.call(JerseyInvocation.java:709) ~[jersey-client-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.client.JerseyInvocation.lambda$runInScope$3(JerseyInvocation.java:703) ~[jersey-client-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.internal.Errors.process(Errors.java:292) ~[jersey-common-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.internal.Errors.process(Errors.java:274) ~[jersey-common-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.internal.Errors.process(Errors.java:205) ~[jersey-common-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:391) ~[jersey-common-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.client.JerseyInvocation.runInScope(JerseyInvocation.java:703) ~[jersey-client-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:673) ~[jersey-client-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:439) ~[jersey-client-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.client.JerseyInvocation$Builder.post(JerseyInvocation.java:345) ~[jersey-client-3.1.11.jar!/:na]
+service-registry-1  |   at com.netflix.eureka.transport.Jersey3ReplicationClient.submitBatchUpdates(Jersey3ReplicationClient.java:116) ~[eureka-core-jersey3-2.0.5.jar!/:2.0.5]
+service-registry-1  |   at com.netflix.eureka.cluster.ReplicationTaskProcessor.process(ReplicationTaskProcessor.java:80) ~[eureka-core-2.0.5.jar!/:2.0.5]
+service-registry-1  |   at com.netflix.eureka.util.batcher.TaskExecutors$BatchWorkerRunnable.run(TaskExecutors.java:178) ~[eureka-core-2.0.5.jar!/:2.0.5]
+service-registry-1  |   at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+service-registry-1  | Caused by: java.net.SocketTimeoutException: Read timed out
+service-registry-1  |   at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:278) ~[na:na]
+service-registry-1  |   at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:304) ~[na:na]
+service-registry-1  |   at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[na:na]
+service-registry-1  |   at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[na:na]
+service-registry-1  |   at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099) ~[na:na]
+service-registry-1  |   at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137) ~[httpcore-4.4.16.jar!/:4.4.16]
+service-registry-1  |   at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153) ~[httpcore-4.4.16.jar!/:4.4.16]
+service-registry-1  |   at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280) ~[httpcore-4.4.16.jar!/:4.4.16]
+service-registry-1  |   at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138) ~[httpclient-4.5.3.jar!/:4.5.3]
+service-registry-1  |   at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56) ~[httpclient-4.5.3.jar!/:4.5.3]
+service-registry-1  |   at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259) ~[httpcore-4.4.16.jar!/:4.4.16]
+service-registry-1  |   at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163) ~[httpcore-4.4.16.jar!/:4.4.16]
+service-registry-1  |   at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165) ~[httpclient-4.5.3.jar!/:4.5.3]
+service-registry-1  |   at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273) ~[httpcore-4.4.16.jar!/:4.4.16]
+service-registry-1  |   at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125) ~[httpcore-4.4.16.jar!/:4.4.16]
+service-registry-1  |   at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272) ~[httpclient-4.5.3.jar!/:4.5.3]
+service-registry-1  |   at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185) ~[httpclient-4.5.3.jar!/:4.5.3]
+service-registry-1  |   at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.3.jar!/:4.5.3]
+service-registry-1  |   at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111) ~[httpclient-4.5.3.jar!/:4.5.3]
+service-registry-1  |   at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.3.jar!/:4.5.3]
+service-registry-1  |   at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72) ~[httpclient-4.5.3.jar!/:4.5.3]
+service-registry-1  |   at org.glassfish.jersey.apache.connector.ApacheConnector.apply(ApacheConnector.java:486) ~[jersey-apache-connector-3.1.11.jar!/:na]
+service-registry-1  |   ... 16 common frames omitted
+service-registry-1  | 
+service-registry-1  | 2026-01-12T15:11:10.495Z  INFO 1 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 5
+service-registry-1  | 2026-01-12T15:11:11.119Z  INFO 1 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+api-gateway-1       | 2026-01-12T15:11:38.652Z  INFO 1 --- [api-gateway] [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+quiz-service-1      | 2026-01-12T15:11:55.080Z  INFO 1 --- [quiz-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+service-registry-1  | 2026-01-12T15:12:11.122Z  INFO 1 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 12ms
+quiz-service-1      | 2026-01-12T15:25:03.705Z  WARN 1 --- [quiz-service] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m18s496ms995µs869ns).
+api-gateway-1       | 2026-01-12T15:25:03.690Z  INFO 1 --- [api-gateway] [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+service-registry-1  | 2026-01-12T15:25:03.639Z  INFO 1 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 712516ms
+quiz-service-1      | 2026-01-12T15:25:04.197Z  INFO 1 --- [quiz-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+service-registry-1  | 2026-01-12T15:26:03.640Z  INFO 1 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 13ms
+service-registry-1  | 2026-01-12T15:26:10.542Z  INFO 1 --- [service-registry] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 5
+service-registry-1  | 2026-01-12T15:27:04.592Z  INFO 1 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 966ms
+service-registry-1  | 2026-01-12T15:28:05.059Z  INFO 1 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+service-registry-1  | 2026-01-12T15:29:05.059Z  INFO 1 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+api-gateway-1       | 2026-01-12T15:30:04.433Z  INFO 1 --- [api-gateway] [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+quiz-service-1      | 2026-01-12T15:30:04.907Z  INFO 1 --- [quiz-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+service-registry-1  | 2026-01-12T15:30:05.069Z  INFO 1 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 76ms
+service-registry-1  | 2026-01-12T15:31:05.719Z  INFO 1 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 590ms
+service-registry-1  | 2026-01-12T15:32:05.742Z  INFO 1 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+service-registry-1  | 2026-01-12T15:33:05.749Z  INFO 1 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+service-registry-1  | 2026-01-12T15:34:05.759Z  INFO 1 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+api-gateway-1       | 2026-01-12T15:35:04.488Z  INFO 1 --- [api-gateway] [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+quiz-service-1      | 2026-01-12T15:35:05.058Z  INFO 1 --- [quiz-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+service-registry-1  | 2026-01-12T15:35:05.761Z  INFO 1 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+service-registry-1  | 2026-01-12T15:36:05.764Z  INFO 1 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+service-registry-1  | 2026-01-12T15:36:07.729Z ERROR 1 --- [service-registry] [et_localhost-13] c.n.e.cluster.ReplicationTaskProcessor   : It seems to be a socket read timeout exception, it will retry later. if it continues to happen and some eureka node occupied all the cpu time, you should set property 'eureka.server.peer-node-read-timeout-ms' to a bigger value
+service-registry-1  | 
+service-registry-1  | jakarta.ws.rs.ProcessingException: java.net.SocketTimeoutException: Read timed out
+service-registry-1  |   at org.glassfish.jersey.apache.connector.ApacheConnector.apply(ApacheConnector.java:534) ~[jersey-apache-connector-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.client.ClientRuntime.invoke(ClientRuntime.java:300) ~[jersey-client-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$0(JerseyInvocation.java:674) ~[jersey-client-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.client.JerseyInvocation.call(JerseyInvocation.java:709) ~[jersey-client-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.client.JerseyInvocation.lambda$runInScope$3(JerseyInvocation.java:703) ~[jersey-client-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.internal.Errors.process(Errors.java:292) ~[jersey-common-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.internal.Errors.process(Errors.java:274) ~[jersey-common-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.internal.Errors.process(Errors.java:205) ~[jersey-common-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:391) ~[jersey-common-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.client.JerseyInvocation.runInScope(JerseyInvocation.java:703) ~[jersey-client-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:673) ~[jersey-client-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:439) ~[jersey-client-3.1.11.jar!/:na]
+service-registry-1  |   at org.glassfish.jersey.client.JerseyInvocation$Builder.post(JerseyInvocation.java:345) ~[jersey-client-3.1.11.jar!/:na]
+service-registry-1  |   at com.netflix.eureka.transport.Jersey3ReplicationClient.submitBatchUpdates(Jersey3ReplicationClient.java:116) ~[eureka-core-jersey3-2.0.5.jar!/:2.0.5]
+service-registry-1  |   at com.netflix.eureka.cluster.ReplicationTaskProcessor.process(ReplicationTaskProcessor.java:80) ~[eureka-core-2.0.5.jar!/:2.0.5]
+service-registry-1  |   at com.netflix.eureka.util.batcher.TaskExecutors$BatchWorkerRunnable.run(TaskExecutors.java:178) ~[eureka-core-2.0.5.jar!/:2.0.5]
+service-registry-1  |   at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+service-registry-1  | Caused by: java.net.SocketTimeoutException: Read timed out
+service-registry-1  |   at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:278) ~[na:na]
+service-registry-1  |   at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:304) ~[na:na]
+service-registry-1  |   at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[na:na]
+service-registry-1  |   at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[na:na]
+service-registry-1  |   at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099) ~[na:na]
+service-registry-1  |   at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137) ~[httpcore-4.4.16.jar!/:4.4.16]
+service-registry-1  |   at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153) ~[httpcore-4.4.16.jar!/:4.4.16]
+service-registry-1  |   at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280) ~[httpcore-4.4.16.jar!/:4.4.16]
+service-registry-1  |   at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138) ~[httpclient-4.5.3.jar!/:4.5.3]
+service-registry-1  |   at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56) ~[httpclient-4.5.3.jar!/:4.5.3]
+service-registry-1  |   at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259) ~[httpcore-4.4.16.jar!/:4.4.16]
+service-registry-1  |   at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163) ~[httpcore-4.4.16.jar!/:4.4.16]
+service-registry-1  |   at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165) ~[httpclient-4.5.3.jar!/:4.5.3]
+service-registry-1  |   at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273) ~[httpcore-4.4.16.jar!/:4.4.16]
+service-registry-1  |   at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125) ~[httpcore-4.4.16.jar!/:4.4.16]
+service-registry-1  |   at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272) ~[httpclient-4.5.3.jar!/:4.5.3]
+service-registry-1  |   at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185) ~[httpclient-4.5.3.jar!/:4.5.3]
+service-registry-1  |   at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.3.jar!/:4.5.3]
+service-registry-1  |   at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111) ~[httpclient-4.5.3.jar!/:4.5.3]
+service-registry-1  |   at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.3.jar!/:4.5.3]
+service-registry-1  |   at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72) ~[httpclient-4.5.3.jar!/:4.5.3]
+service-registry-1  |   at org.glassfish.jersey.apache.connector.ApacheConnector.apply(ApacheConnector.java:486) ~[jersey-apache-connector-3.1.11.jar!/:na]
+service-registry-1  |   ... 16 common frames omitted
+service-registry-1  | 
+service-registry-1  | 2026-01-12T15:37:05.783Z  INFO 1 --- [service-registry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms

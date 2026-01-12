@@ -1,0 +1,107 @@
+networks:
+    quiz-app-network:
+        driver: bridge
+volumes:
+    quizdb:
+    questiondb:
+
+services:
+    quizdb:
+        #platform: linux/x86_64
+        image: mysql:8.4
+        environment:
+          MYSQL_DATABASE: "quizdb"
+          #MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+          # creates DB on first run
+          MYSQL_USER: "quizdb"
+          MYSQL_PASSWORD: "1234"
+          MYSQL_ROOT_PASSWORD: "root"   # required
+        ports:
+          - "3306:3306"
+        volumes:
+          - quizdb:/var/lib/mysql
+        networks:
+          - quiz-app-network
+        healthcheck:
+          test: [ "CMD", "mysqladmin", "ping", "-h", "localhost" ]
+          interval: 5s
+          timeout: 5s
+          retries: 10
+          start_period: 10s
+
+    questiondb:
+        #platform: linux/x86_64
+        image: mysql:8.4
+        environment:
+          MYSQL_DATABASE: "questiondb"
+          #MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+          # creates DB on first run
+          MYSQL_USER: "questiondb"
+          MYSQL_PASSWORD: "12345"
+          MYSQL_ROOT_PASSWORD: "root"   # required
+        ports:
+            - "3308:3306"
+        volumes:
+          - questiondb:/var/lib/mysql
+        networks:
+          - quiz-app-network
+        healthcheck:
+          test: [ "CMD", "mysqladmin", "ping", "-h", "localhost" ]
+          interval: 5s
+          timeout: 5s
+          retries: 10
+          start_period: 10s
+
+      
+    service-registry:
+        build: ./service-registry/
+        ports:
+            - "8761:8761"
+        healthcheck:
+          test: ["CMD", "wget", "--spider", "http://localhost:8761/eureka/apps"]
+          interval: 5s
+          timeout: 5s
+          retries: 10
+        networks:
+            - quiz-app-network
+
+    api-gateway:
+        build: ./api-gateway/
+        ports:
+            - "8765:8765"
+        networks:
+            - quiz-app-network
+        depends_on:
+            service-registry:
+                condition: service_healthy         
+
+    quiz-service:
+        build: ./quiz-service/
+        ports:
+            - "8090:8090"
+        networks:
+            - quiz-app-network
+        depends_on:
+            quizdb:
+                condition: service_healthy
+            service-registry:
+                condition: service_healthy
+        environment:
+            - SPRING_PROFILES_ACTIVE=docker
+
+    question-service:
+        build: ./question-service/
+        # ports: Here we are commenting the ports because, since we are using the api gateway, and also when we try to scale this service we are getting 
+        # error as posrt is already in use for one instance, so 2nd instance can't run on the same port.
+        # since we are using api-gateway, we will connect throgh gateway so, we can happily scale n no.of instances for load balancing.
+        # SPRING CLOUD IS TAKING CARE THE LOAD-BALANCING
+        #     - "8081:8080"
+        networks:
+            - quiz-app-network
+        depends_on:
+            questiondb:
+                condition: service_healthy
+            service-registry:
+                condition: service_healthy
+        environment:
+             - SPRING_PROFILES_ACTIVE=docker
